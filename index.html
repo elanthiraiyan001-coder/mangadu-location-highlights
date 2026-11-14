@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Internal Appraisal Slide: Location Highlights (Noombal Pin)</title>
+    <title>Internal Appraisal Slide: Location Highlights</title>
     <style>
         * {
             box-sizing: border-box;
@@ -102,7 +102,6 @@
             display: flex;
             align-items: center;
             gap: 10px;
-            overflow-x: auto;
         }
 
         .stab-btn {
@@ -118,7 +117,6 @@
             color: #475569;
             cursor: pointer;
             transition: all 0.15s ease;
-            white-space: nowrap;
         }
 
         .stab-btn:hover {
@@ -170,7 +168,7 @@
         .panel-layout {
             height: 100%;
             display: grid;
-            grid-template-columns: 46% 54%;
+            grid-template-columns: 44% 56%;
             overflow: hidden;
         }
 
@@ -217,7 +215,7 @@
         }
 
         .poi-item {
-            padding: 9px 12px;
+            padding: 10px 14px;
             border-radius: 6px;
             background: #F8FAFC;
             border: 1px solid #E2E8F0;
@@ -236,7 +234,6 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            gap: 8px;
         }
 
         .poi-title-wrap {
@@ -246,7 +243,6 @@
             font-size: 13.5px;
             font-weight: 600;
             color: #0F172A;
-            line-height: 1.3;
         }
 
         .poi-idx {
@@ -256,27 +252,20 @@
             min-width: 20px;
         }
 
-        .poi-time-wrap {
-            display: flex;
-            align-items: center;
-            gap: 4px;
-            white-space: nowrap;
-        }
-
         .poi-dist {
             font-size: 12.5px;
             font-weight: 700;
-            color: #0F172A;
-        }
-
-        .poi-time {
-            font-size: 11.5px;
-            font-weight: 600;
-            color: #64748B;
+            background: #FFFFFF;
+            border: 1px solid #CBD5E1;
+            padding: 3px 9px;
+            border-radius: 4px;
+            white-space: nowrap;
         }
 
         .poi-item.active .poi-dist {
-            color: #0F766E;
+            border-color: #0F172A;
+            background: #0F172A;
+            color: #FFFFFF !important;
         }
 
         /* Right Side: Visual & Real Estate Importance Card */
@@ -448,12 +437,12 @@
         <div class="slide-header">
             <div class="header-left">
                 <span class="tagline">Land Acquisition Appraisal • Proximity Analysis</span>
-                <h1 class="slide-title">Location Highlights & Micro-Market Proximity (Noombal Pin)</h1>
+                <h1 class="slide-title">Location Highlights & Micro-Market Proximity</h1>
             </div>
             <div class="header-right">
                 <div class="coord-pill">
                     <span class="coord-dot"></span>
-                    <span>13°03'33.6"N 80°08'00.0"E (Noombal / Velappanchavadi)</span>
+                    <span>13°01'34.1"N 80°06'58.8"E (Mangadu Pin)</span>
                 </div>
             </div>
         </div>
@@ -476,7 +465,7 @@
     <button class="stab-btn " onclick="selectCategory('hospitals', this)">
         <span class="tab-dot" style="background-color: #DC2626;"></span>
         <span>Hospitals & Healthcare</span>
-        <span class="stab-count">6</span>
+        <span class="stab-count">7</span>
     </button>
     
     <button class="stab-btn " onclick="selectCategory('entertainment', this)">
@@ -488,7 +477,7 @@
     <button class="stab-btn " onclick="selectCategory('transit', this)">
         <span class="tab-dot" style="background-color: #0D9488;"></span>
         <span>Connectivity & Transit Hubs</span>
-        <span class="stab-count">11</span>
+        <span class="stab-count">7</span>
     </button>
     
         </div>
@@ -502,8 +491,8 @@
             <!-- Left Side: Landmarks List -->
             <div class="panel-left">
                 <div class="col-header-box">
-                    <h2 class="col-title" style="color: #2563EB;">IT Parks & Business Hubs (7)</h2>
-                    <p class="col-sub">Dual-corridor employment access to Porur tech spine and Ambattur industrial/IT zone</p>
+                    <h2 class="col-title" style="color: #2563EB;">IT Parks & Business Hubs</h2>
+                    <p class="col-sub">Major white-collar employment engines driving immediate rental absorption</p>
                 </div>
                 <ul class="list-container">
                     
@@ -511,12 +500,9 @@
             <div class="poi-header">
                 <div class="poi-title-wrap">
                     <span class="poi-idx">01.</span>
-                    <span class="poi-name">Commerzone Porur</span>
+                    <span class="poi-name">Commerzone Porur (Mindspace / K Raheja)</span>
                 </div>
-                <div class="poi-time-wrap">
-                    <span class="poi-dist">6.9km</span>
-                    <span class="poi-time">(18 mins)</span>
-                </div>
+                <span class="poi-dist" style="color: #2563EB;">7.1km</span>
             </div>
         </li>
         
@@ -524,12 +510,9 @@
             <div class="poi-header">
                 <div class="poi-title-wrap">
                     <span class="poi-idx">02.</span>
-                    <span class="poi-name">RMZ One Paramount (Porur)</span>
+                    <span class="poi-name">RMZ One Paramount</span>
                 </div>
-                <div class="poi-time-wrap">
-                    <span class="poi-dist">6.8km</span>
-                    <span class="poi-time">(18 mins)</span>
-                </div>
+                <span class="poi-dist" style="color: #2563EB;">7.5km</span>
             </div>
         </li>
         
@@ -539,10 +522,7 @@
                     <span class="poi-idx">03.</span>
                     <span class="poi-name">L&T Infotech / SEZ Campus</span>
                 </div>
-                <div class="poi-time-wrap">
-                    <span class="poi-dist">8.5km</span>
-                    <span class="poi-time">(22 mins)</span>
-                </div>
+                <span class="poi-dist" style="color: #2563EB;">8.6km</span>
             </div>
         </li>
         
@@ -550,12 +530,9 @@
             <div class="poi-header">
                 <div class="poi-title-wrap">
                     <span class="poi-idx">04.</span>
-                    <span class="poi-name">D.L.F Cyber City (DLF IT Park)</span>
+                    <span class="poi-name">Jayanth Tech Park</span>
                 </div>
-                <div class="poi-time-wrap">
-                    <span class="poi-dist">9.0km</span>
-                    <span class="poi-time">(24 mins)</span>
-                </div>
+                <span class="poi-dist" style="color: #2563EB;">9.1km</span>
             </div>
         </li>
         
@@ -563,12 +540,9 @@
             <div class="poi-header">
                 <div class="poi-title-wrap">
                     <span class="poi-idx">05.</span>
-                    <span class="poi-name">Kosmo One IT Park - Ambattur</span>
+                    <span class="poi-name">DLF Cybercity (DLF IT Park)</span>
                 </div>
-                <div class="poi-time-wrap">
-                    <span class="poi-dist">9.7km</span>
-                    <span class="poi-time">(22 mins)</span>
-                </div>
+                <span class="poi-dist" style="color: #2563EB;">9.1km</span>
             </div>
         </li>
         
@@ -576,12 +550,9 @@
             <div class="poi-header">
                 <div class="poi-title-wrap">
                     <span class="poi-idx">06.</span>
-                    <span class="poi-name">Ambit IT Park (Ambattur Industrial Estate)</span>
+                    <span class="poi-name">Olympia Technology Park (Guindy)</span>
                 </div>
-                <div class="poi-time-wrap">
-                    <span class="poi-dist">9.9km</span>
-                    <span class="poi-time">(23 mins)</span>
-                </div>
+                <span class="poi-dist" style="color: #2563EB;">11.7km</span>
             </div>
         </li>
         
@@ -589,12 +560,9 @@
             <div class="poi-header">
                 <div class="poi-title-wrap">
                     <span class="poi-idx">07.</span>
-                    <span class="poi-name">Olympia Technology Park (Guindy)</span>
+                    <span class="poi-name">ASV Suntech Park</span>
                 </div>
-                <div class="poi-time-wrap">
-                    <span class="poi-dist">12.3km</span>
-                    <span class="poi-time">(30 mins)</span>
-                </div>
+                <span class="poi-dist" style="color: #2563EB;">23.8km</span>
             </div>
         </li>
         
@@ -607,33 +575,33 @@
                     
                     <!-- Landmark Image Banner -->
                     <div class="photo-banner-wrap">
-                        <img id="it-img" class="photo-banner" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=80" alt="Commerzone Porur">
+                        <img id="it-img" class="photo-banner" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=80" alt="Commerzone Porur (Mindspace / K Raheja)">
                         <div class="photo-overlay">
-                            <span class="distance-pill" id="it-dist-badge">6.9km • 18 mins from Site</span>
+                            <span class="distance-pill" id="it-dist-badge">7.1km from Site</span>
                         </div>
                     </div>
 
                     <!-- Landmark Name & Category -->
                     <div class="detail-header-block">
                         <div class="detail-cat-tag" style="color: #2563EB;">IT PARKS & BUSINESS HUBS</div>
-                        <h3 class="detail-landmark-title" id="it-title">Commerzone Porur</h3>
+                        <h3 class="detail-landmark-title" id="it-title">Commerzone Porur (Mindspace / K Raheja)</h3>
                     </div>
 
                     <!-- Strategic Importance Section -->
                     <div class="importance-highlight-box">
                         <div class="ih-label">Real Estate Importance & Strategic Advantage</div>
-                        <p class="ih-text" id="it-desc">Grade-A IT park campus hosting multinational software & BPO giants. Direct arterial connection via Chennai Bypass drives immediate rental demand for residential units.</p>
+                        <p class="ih-text" id="it-desc">High-density Grade-A tech ecosystem hosting top IT/BPO conglomerates. Generates steady residential demand for 2 & 3 BHK apartments within a 15-minute commute.</p>
                     </div>
 
                     <!-- 2-Column Metrics / Target Market Breakdown -->
                     <div class="metrics-grid">
                         <div class="metric-sub-card">
                             <div class="m-label">Target Buyer Demographics</div>
-                            <div class="m-val" id="it-demographic">IT Consultants, Tech Leads & Software Engineers</div>
+                            <div class="m-val" id="it-demographic">Senior IT Consultants, Product Leads & Software Architects</div>
                         </div>
                         <div class="metric-sub-card">
                             <div class="m-label">Investment / Yield Driver</div>
-                            <div class="m-val" id="it-catalyst">High-Density White-Collar Rental Tenant Inflow</div>
+                            <div class="m-val" id="it-catalyst">Massive Corporate Rental Pool (15k+ workforce)</div>
                         </div>
                     </div>
 
@@ -649,8 +617,8 @@
             <!-- Left Side: Landmarks List -->
             <div class="panel-left">
                 <div class="col-header-box">
-                    <h2 class="col-title" style="color: #D97706;">Schools & Colleges (8)</h2>
-                    <p class="col-sub">Cluster of premier medical colleges, deemed universities, and international schools</p>
+                    <h2 class="col-title" style="color: #D97706;">Schools & Colleges</h2>
+                    <p class="col-sub">Essential education infrastructure defining family end-user appeal & capital appreciation</p>
                 </div>
                 <ul class="list-container">
                     
@@ -658,12 +626,9 @@
             <div class="poi-header">
                 <div class="poi-title-wrap">
                     <span class="poi-idx">01.</span>
-                    <span class="poi-name">ACS Medical College & Hospital</span>
+                    <span class="poi-name">Velammal Vidyalaya (Mangadu)</span>
                 </div>
-                <div class="poi-time-wrap">
-                    <span class="poi-dist">1.7km</span>
-                    <span class="poi-time">(3 mins)</span>
-                </div>
+                <span class="poi-dist" style="color: #D97706;">300m</span>
             </div>
         </li>
         
@@ -671,12 +636,9 @@
             <div class="poi-header">
                 <div class="poi-title-wrap">
                     <span class="poi-idx">02.</span>
-                    <span class="poi-name">Sindhi College (Thiruverkadu)</span>
+                    <span class="poi-name">Rishs International School</span>
                 </div>
-                <div class="poi-time-wrap">
-                    <span class="poi-dist">2.0km</span>
-                    <span class="poi-time">(3 mins)</span>
-                </div>
+                <span class="poi-dist" style="color: #D97706;">1.9 km</span>
             </div>
         </li>
         
@@ -684,12 +646,9 @@
             <div class="poi-header">
                 <div class="poi-title-wrap">
                     <span class="poi-idx">03.</span>
-                    <span class="poi-name">The Pupil Saveetha Eco School</span>
+                    <span class="poi-name">Sri Muthukumaran Institute of Technology</span>
                 </div>
-                <div class="poi-time-wrap">
-                    <span class="poi-dist">3.8km</span>
-                    <span class="poi-time">(8 mins)</span>
-                </div>
+                <span class="poi-dist" style="color: #D97706;">2.1km</span>
             </div>
         </li>
         
@@ -697,12 +656,9 @@
             <div class="poi-header">
                 <div class="poi-title-wrap">
                     <span class="poi-idx">04.</span>
-                    <span class="poi-name">Sri Ramachandra Institute of Higher Education (SRMC)</span>
+                    <span class="poi-name">Sri Krish International School (Kundrathur)</span>
                 </div>
-                <div class="poi-time-wrap">
-                    <span class="poi-dist">3.8km</span>
-                    <span class="poi-time">(12 mins)</span>
-                </div>
+                <span class="poi-dist" style="color: #D97706;">2.9km</span>
             </div>
         </li>
         
@@ -710,12 +666,9 @@
             <div class="poi-header">
                 <div class="poi-title-wrap">
                     <span class="poi-idx">05.</span>
-                    <span class="poi-name">Saveetha Dental College & Hospitals</span>
+                    <span class="poi-name">Maharishi Vidya Mandir (Mangadu)</span>
                 </div>
-                <div class="poi-time-wrap">
-                    <span class="poi-dist">4.3km</span>
-                    <span class="poi-time">(9 mins)</span>
-                </div>
+                <span class="poi-dist" style="color: #D97706;">3.2km</span>
             </div>
         </li>
         
@@ -723,12 +676,9 @@
             <div class="poi-header">
                 <div class="poi-title-wrap">
                     <span class="poi-idx">06.</span>
-                    <span class="poi-name">The Schram Academy (Maduravoyal)</span>
+                    <span class="poi-name">PSBB Millennium School (Gerugambakkam)</span>
                 </div>
-                <div class="poi-time-wrap">
-                    <span class="poi-dist">6.0km</span>
-                    <span class="poi-time">(17 mins)</span>
-                </div>
+                <span class="poi-dist" style="color: #D97706;">3.9km</span>
             </div>
         </li>
         
@@ -736,12 +686,9 @@
             <div class="poi-header">
                 <div class="poi-title-wrap">
                     <span class="poi-idx">07.</span>
-                    <span class="poi-name">Velammal Vidyalaya (Ayanambakkam / Vanagaram)</span>
+                    <span class="poi-name">Sri Ramachandra Institute of Higher Education (SRMC)</span>
                 </div>
-                <div class="poi-time-wrap">
-                    <span class="poi-dist">6.7km</span>
-                    <span class="poi-time">(18 mins)</span>
-                </div>
+                <span class="poi-dist" style="color: #D97706;">4.8km</span>
             </div>
         </li>
         
@@ -749,12 +696,9 @@
             <div class="poi-header">
                 <div class="poi-title-wrap">
                     <span class="poi-idx">08.</span>
-                    <span class="poi-name">Dr. M.G.R. Educational and Research Institute</span>
+                    <span class="poi-name">Madha Engineering & Medical College</span>
                 </div>
-                <div class="poi-time-wrap">
-                    <span class="poi-dist">7.7km</span>
-                    <span class="poi-time">(22 mins)</span>
-                </div>
+                <span class="poi-dist" style="color: #D97706;">5.9km</span>
             </div>
         </li>
         
@@ -767,33 +711,33 @@
                     
                     <!-- Landmark Image Banner -->
                     <div class="photo-banner-wrap">
-                        <img id="schools-img" class="photo-banner" src="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1000&q=80" alt="ACS Medical College & Hospital">
+                        <img id="schools-img" class="photo-banner" src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=1000&q=80" alt="Velammal Vidyalaya (Mangadu)">
                         <div class="photo-overlay">
-                            <span class="distance-pill" id="schools-dist-badge">1.7km • 3 mins from Site</span>
+                            <span class="distance-pill" id="schools-dist-badge">300m from Site</span>
                         </div>
                     </div>
 
                     <!-- Landmark Name & Category -->
                     <div class="detail-header-block">
                         <div class="detail-cat-tag" style="color: #D97706;">SCHOOLS & COLLEGES</div>
-                        <h3 class="detail-landmark-title" id="schools-title">ACS Medical College & Hospital</h3>
+                        <h3 class="detail-landmark-title" id="schools-title">Velammal Vidyalaya (Mangadu)</h3>
                     </div>
 
                     <!-- Strategic Importance Section -->
                     <div class="importance-highlight-box">
                         <div class="ih-label">Real Estate Importance & Strategic Advantage</div>
-                        <p class="ih-text" id="schools-desc">Prominent medical college and teaching hospital campus situated right along Poonamallee High Road, generating continuous faculty and student rental demand.</p>
+                        <p class="ih-text" id="schools-desc">Practically next door (2-minute walk). Top-ranked CBSE school; eliminating school bus commutes is the #1 decision maker and purchase hook for families with young children.</p>
                     </div>
 
                     <!-- 2-Column Metrics / Target Market Breakdown -->
                     <div class="metrics-grid">
                         <div class="metric-sub-card">
                             <div class="m-label">Target Buyer Demographics</div>
-                            <div class="m-val" id="schools-demographic">Medical Professors, Lecturers & Resident Students</div>
+                            <div class="m-val" id="schools-demographic">Young Nuclear Families with School-Going Children</div>
                         </div>
                         <div class="metric-sub-card">
                             <div class="m-label">Investment / Yield Driver</div>
-                            <div class="m-val" id="schools-catalyst">Steady Year-round Institutional Rental Demand</div>
+                            <div class="m-val" id="schools-catalyst">Walk-to-School Luxury: Instant Deal-Closer for End-Users</div>
                         </div>
                     </div>
 
@@ -809,8 +753,8 @@
             <!-- Left Side: Landmarks List -->
             <div class="panel-left">
                 <div class="col-header-box">
-                    <h2 class="col-title" style="color: #DC2626;">Hospitals & Healthcare (6)</h2>
-                    <p class="col-sub">Immediate healthcare corridor along Poonamallee High Road backed by quaternary hospitals</p>
+                    <h2 class="col-title" style="color: #DC2626;">Hospitals & Healthcare</h2>
+                    <p class="col-sub">Comprehensive healthcare safety net from immediate clinics to tertiary hospitals</p>
                 </div>
                 <ul class="list-container">
                     
@@ -818,12 +762,9 @@
             <div class="poi-header">
                 <div class="poi-title-wrap">
                     <span class="poi-idx">01.</span>
-                    <span class="poi-name">Aravind Eye Hospital (Poonamallee High Rd)</span>
+                    <span class="poi-name">Taj Hospital (Pattur)</span>
                 </div>
-                <div class="poi-time-wrap">
-                    <span class="poi-dist">1.3km</span>
-                    <span class="poi-time">(2 mins)</span>
-                </div>
+                <span class="poi-dist" style="color: #DC2626;">300m</span>
             </div>
         </li>
         
@@ -831,12 +772,9 @@
             <div class="poi-header">
                 <div class="poi-title-wrap">
                     <span class="poi-idx">02.</span>
-                    <span class="poi-name">ACS Medical College Hospital</span>
+                    <span class="poi-name">Mangadu Government PHC Hospital</span>
                 </div>
-                <div class="poi-time-wrap">
-                    <span class="poi-dist">1.7km</span>
-                    <span class="poi-time">(3 mins)</span>
-                </div>
+                <span class="poi-dist" style="color: #DC2626;">1km</span>
             </div>
         </li>
         
@@ -844,12 +782,9 @@
             <div class="poi-header">
                 <div class="poi-title-wrap">
                     <span class="poi-idx">03.</span>
-                    <span class="poi-name">Sri Ramachandra Medical Centre (SRMC, Porur)</span>
+                    <span class="poi-name">Annai Grace Hospital</span>
                 </div>
-                <div class="poi-time-wrap">
-                    <span class="poi-dist">4.3km</span>
-                    <span class="poi-time">(14 mins)</span>
-                </div>
+                <span class="poi-dist" style="color: #DC2626;">3.4km</span>
             </div>
         </li>
         
@@ -857,12 +792,9 @@
             <div class="poi-header">
                 <div class="poi-title-wrap">
                     <span class="poi-idx">04.</span>
-                    <span class="poi-name">Saveetha Dental Hospital & Healthcare</span>
+                    <span class="poi-name">Sri Ramachandra Medical Centre (Sri Ramachandra Hospital)</span>
                 </div>
-                <div class="poi-time-wrap">
-                    <span class="poi-dist">4.3km</span>
-                    <span class="poi-time">(9 mins)</span>
-                </div>
+                <span class="poi-dist" style="color: #DC2626;">5.3km</span>
             </div>
         </li>
         
@@ -870,12 +802,9 @@
             <div class="poi-header">
                 <div class="poi-title-wrap">
                     <span class="poi-idx">05.</span>
-                    <span class="poi-name">Apollo Speciality Hospital (Vanagaram)</span>
+                    <span class="poi-name">Kedar Hospital (Mugalivakkam)</span>
                 </div>
-                <div class="poi-time-wrap">
-                    <span class="poi-dist">5.6km</span>
-                    <span class="poi-time">(14 mins)</span>
-                </div>
+                <span class="poi-dist" style="color: #DC2626;">6.3km</span>
             </div>
         </li>
         
@@ -883,12 +812,19 @@
             <div class="poi-header">
                 <div class="poi-title-wrap">
                     <span class="poi-idx">06.</span>
+                    <span class="poi-name">Apollo Speciality Hospital (Vanagaram)</span>
+                </div>
+                <span class="poi-dist" style="color: #DC2626;">8.9km</span>
+            </div>
+        </li>
+        
+        <li class="poi-item " id="hospitals-li-6" onclick="showDetail('hospitals', 6)">
+            <div class="poi-header">
+                <div class="poi-title-wrap">
+                    <span class="poi-idx">07.</span>
                     <span class="poi-name">MIOT International Hospital (Manapakkam)</span>
                 </div>
-                <div class="poi-time-wrap">
-                    <span class="poi-dist">9.1km</span>
-                    <span class="poi-time">(24 mins)</span>
-                </div>
+                <span class="poi-dist" style="color: #DC2626;">9.3km</span>
             </div>
         </li>
         
@@ -901,33 +837,33 @@
                     
                     <!-- Landmark Image Banner -->
                     <div class="photo-banner-wrap">
-                        <img id="hospitals-img" class="photo-banner" src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=1000&q=80" alt="Aravind Eye Hospital (Poonamallee High Rd)">
+                        <img id="hospitals-img" class="photo-banner" src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=1000&q=80" alt="Taj Hospital (Pattur)">
                         <div class="photo-overlay">
-                            <span class="distance-pill" id="hospitals-dist-badge">1.3km • 2 mins from Site</span>
+                            <span class="distance-pill" id="hospitals-dist-badge">300m from Site</span>
                         </div>
                     </div>
 
                     <!-- Landmark Name & Category -->
                     <div class="detail-header-block">
                         <div class="detail-cat-tag" style="color: #DC2626;">HOSPITALS & HEALTHCARE</div>
-                        <h3 class="detail-landmark-title" id="hospitals-title">Aravind Eye Hospital (Poonamallee High Rd)</h3>
+                        <h3 class="detail-landmark-title" id="hospitals-title">Taj Hospital (Pattur)</h3>
                     </div>
 
                     <!-- Strategic Importance Section -->
                     <div class="importance-highlight-box">
                         <div class="ih-label">Real Estate Importance & Strategic Advantage</div>
-                        <p class="ih-text" id="hospitals-desc">State-of-the-art super-specialty eye care hospital providing world-class ophthalmology services just 2 minutes away.</p>
+                        <p class="ih-text" id="hospitals-desc">Immediate neighborhood medical facility at 300m walking distance. Provides 24/7 outpatient care, emergency first response, and pharmacy services.</p>
                     </div>
 
                     <!-- 2-Column Metrics / Target Market Breakdown -->
                     <div class="metrics-grid">
                         <div class="metric-sub-card">
                             <div class="m-label">Target Buyer Demographics</div>
-                            <div class="m-val" id="hospitals-demographic">Neighborhood Residents & Senior Citizens</div>
+                            <div class="m-val" id="hospitals-demographic">Senior Citizens, Retirees & Families with Toddlers</div>
                         </div>
                         <div class="metric-sub-card">
                             <div class="m-label">Investment / Yield Driver</div>
-                            <div class="m-val" id="hospitals-catalyst">Super-Specialty Eye Care at the Project's Doorstep</div>
+                            <div class="m-val" id="hospitals-catalyst">Doorstep Emergency Healthcare Security</div>
                         </div>
                     </div>
 
@@ -943,8 +879,8 @@
             <!-- Left Side: Landmarks List -->
             <div class="panel-left">
                 <div class="col-header-box">
-                    <h2 class="col-title" style="color: #9333EA;">Entertainment, Retail & Culture (6)</h2>
-                    <p class="col-sub">Sacred cultural pilgrimage landmarks, mega hypermarkets, and destination malls</p>
+                    <h2 class="col-title" style="color: #9333EA;">Entertainment, Retail & Culture</h2>
+                    <p class="col-sub">Lifestyle, retail hypermarkets, and cultural heritage anchors</p>
                 </div>
                 <ul class="list-container">
                     
@@ -952,12 +888,9 @@
             <div class="poi-header">
                 <div class="poi-title-wrap">
                     <span class="poi-idx">01.</span>
-                    <span class="poi-name">Arulmigu Devi Karumariamman Temple (Thiruverkadu)</span>
+                    <span class="poi-name">Arulmigu Mangadu Kamakshi Amman Temple</span>
                 </div>
-                <div class="poi-time-wrap">
-                    <span class="poi-dist">4.2km</span>
-                    <span class="poi-time">(11 mins)</span>
-                </div>
+                <span class="poi-dist" style="color: #9333EA;">1.2km</span>
             </div>
         </li>
         
@@ -965,12 +898,9 @@
             <div class="poi-header">
                 <div class="poi-title-wrap">
                     <span class="poi-idx">02.</span>
-                    <span class="poi-name">Super Saravana Stores (Porur)</span>
+                    <span class="poi-name">GK Cinemas (Porur)</span>
                 </div>
-                <div class="poi-time-wrap">
-                    <span class="poi-dist">6.3km</span>
-                    <span class="poi-time">(17 mins)</span>
-                </div>
+                <span class="poi-dist" style="color: #9333EA;">6.1km</span>
             </div>
         </li>
         
@@ -978,12 +908,9 @@
             <div class="poi-header">
                 <div class="poi-title-wrap">
                     <span class="poi-idx">03.</span>
-                    <span class="poi-name">Rohini Silver Screens (Koyambedu)</span>
+                    <span class="poi-name">Super Saravana Stores (Porur)</span>
                 </div>
-                <div class="poi-time-wrap">
-                    <span class="poi-dist">9.6km</span>
-                    <span class="poi-time">(29 mins)</span>
-                </div>
+                <span class="poi-dist" style="color: #9333EA;">6.4km</span>
             </div>
         </li>
         
@@ -991,12 +918,9 @@
             <div class="poi-header">
                 <div class="poi-title-wrap">
                     <span class="poi-idx">04.</span>
-                    <span class="poi-name">EVP Cinemas / EVP World</span>
+                    <span class="poi-name">Chandra Metro Mall & INOX (Virugambakkam)</span>
                 </div>
-                <div class="poi-time-wrap">
-                    <span class="poi-dist">10.1km</span>
-                    <span class="poi-time">(15 mins)</span>
-                </div>
+                <span class="poi-dist" style="color: #9333EA;">9.8km</span>
             </div>
         </li>
         
@@ -1004,12 +928,9 @@
             <div class="poi-header">
                 <div class="poi-title-wrap">
                     <span class="poi-idx">05.</span>
-                    <span class="poi-name">VR Chennai (Anna Nagar / Koyambedu)</span>
+                    <span class="poi-name">Nexus Vijaya Mall (Vadapalani)</span>
                 </div>
-                <div class="poi-time-wrap">
-                    <span class="poi-dist">10.5km</span>
-                    <span class="poi-time">(32 mins)</span>
-                </div>
+                <span class="poi-dist" style="color: #9333EA;">11.6km</span>
             </div>
         </li>
         
@@ -1017,12 +938,9 @@
             <div class="poi-header">
                 <div class="poi-title-wrap">
                     <span class="poi-idx">06.</span>
-                    <span class="poi-name">Nexus Vijaya Mall (Vadapalani)</span>
+                    <span class="poi-name">Aerohub Mall & PVR (Airport)</span>
                 </div>
-                <div class="poi-time-wrap">
-                    <span class="poi-dist">12.6km</span>
-                    <span class="poi-time">(36 mins)</span>
-                </div>
+                <span class="poi-dist" style="color: #9333EA;">11.6km</span>
             </div>
         </li>
         
@@ -1035,33 +953,33 @@
                     
                     <!-- Landmark Image Banner -->
                     <div class="photo-banner-wrap">
-                        <img id="entertainment-img" class="photo-banner" src="https://images.unsplash.com/photo-1609766857041-ed402ea8069a?auto=format&fit=crop&w=1000&q=80" alt="Arulmigu Devi Karumariamman Temple (Thiruverkadu)">
+                        <img id="entertainment-img" class="photo-banner" src="https://images.unsplash.com/photo-1609766857041-ed402ea8069a?auto=format&fit=crop&w=1000&q=80" alt="Arulmigu Mangadu Kamakshi Amman Temple">
                         <div class="photo-overlay">
-                            <span class="distance-pill" id="entertainment-dist-badge">4.2km • 11 mins from Site</span>
+                            <span class="distance-pill" id="entertainment-dist-badge">1.2km from Site</span>
                         </div>
                     </div>
 
                     <!-- Landmark Name & Category -->
                     <div class="detail-header-block">
                         <div class="detail-cat-tag" style="color: #9333EA;">ENTERTAINMENT, RETAIL & CULTURE</div>
-                        <h3 class="detail-landmark-title" id="entertainment-title">Arulmigu Devi Karumariamman Temple (Thiruverkadu)</h3>
+                        <h3 class="detail-landmark-title" id="entertainment-title">Arulmigu Mangadu Kamakshi Amman Temple</h3>
                     </div>
 
                     <!-- Strategic Importance Section -->
                     <div class="importance-highlight-box">
                         <div class="ih-label">Real Estate Importance & Strategic Advantage</div>
-                        <p class="ih-text" id="entertainment-desc">Famed state-wide pilgrimage shrine drawing millions annually; infuses the entire micro-market with rich cultural heritage, peace, and spiritual prestige.</p>
+                        <p class="ih-text" id="entertainment-desc">Historic sacred heritage epicenter of regional and national renown. Infuses the entire locality with spiritual grace, peace, and permanent cultural prestige.</p>
                     </div>
 
                     <!-- 2-Column Metrics / Target Market Breakdown -->
                     <div class="metrics-grid">
                         <div class="metric-sub-card">
                             <div class="m-label">Target Buyer Demographics</div>
-                            <div class="m-val" id="entertainment-demographic">Devout Homebuyers, Multi-Generational Families & Retirees</div>
+                            <div class="m-val" id="entertainment-demographic">Devout Homebuyers, Retirees & Multi-Generational Families</div>
                         </div>
                         <div class="metric-sub-card">
                             <div class="m-label">Investment / Yield Driver</div>
-                            <div class="m-val" id="entertainment-catalyst">Permanent Cultural & Spiritual Heritage Value Anchor</div>
+                            <div class="m-val" id="entertainment-catalyst">Permanent Cultural Aura Ensuring Evergreen Buyer Sentiment</div>
                         </div>
                     </div>
 
@@ -1077,8 +995,8 @@
             <!-- Left Side: Landmarks List -->
             <div class="panel-left">
                 <div class="col-header-box">
-                    <h2 class="col-title" style="color: #0D9488;">Connectivity & Transit Hubs (11)</h2>
-                    <p class="col-sub">Strategic junction connecting Poonamallee High Road, Chennai Bypass, and Metro Phase 2</p>
+                    <h2 class="col-title" style="color: #0D9488;">Connectivity & Transit Hubs</h2>
+                    <p class="col-sub">Multimodal transit network linking buses, metro rail, expressways, and airport</p>
                 </div>
                 <ul class="list-container">
                     
@@ -1086,12 +1004,9 @@
             <div class="poi-header">
                 <div class="poi-title-wrap">
                     <span class="poi-idx">01.</span>
-                    <span class="poi-name">Velappanchavadi Bus Stop (Poonamallee High Rd)</span>
+                    <span class="poi-name">Pattur Bus Stop</span>
                 </div>
-                <div class="poi-time-wrap">
-                    <span class="poi-dist">650m (walk) / 2.9km (bike)</span>
-                    <span class="poi-time">(6 mins)</span>
-                </div>
+                <span class="poi-dist" style="color: #0D9488;">500m</span>
             </div>
         </li>
         
@@ -1099,12 +1014,9 @@
             <div class="poi-header">
                 <div class="poi-title-wrap">
                     <span class="poi-idx">02.</span>
-                    <span class="poi-name">Maduravoyal Metro Station (Phase 2)</span>
+                    <span class="poi-name">Mangadu Bus Terminus</span>
                 </div>
-                <div class="poi-time-wrap">
-                    <span class="poi-dist">1.6km</span>
-                    <span class="poi-time">(5 mins)</span>
-                </div>
+                <span class="poi-dist" style="color: #0D9488;">1.2km</span>
             </div>
         </li>
         
@@ -1112,12 +1024,9 @@
             <div class="poi-header">
                 <div class="poi-title-wrap">
                     <span class="poi-idx">03.</span>
-                    <span class="poi-name">Kumananchavadi Metro Station (Phase 2)</span>
+                    <span class="poi-name">Iyyappanthangal Bus Depot & Metro Station (Phase 2)</span>
                 </div>
-                <div class="poi-time-wrap">
-                    <span class="poi-dist">2.6km</span>
-                    <span class="poi-time">(5 mins)</span>
-                </div>
+                <span class="poi-dist" style="color: #0D9488;">4.2km</span>
             </div>
         </li>
         
@@ -1125,12 +1034,9 @@
             <div class="poi-header">
                 <div class="poi-title-wrap">
                     <span class="poi-idx">04.</span>
-                    <span class="poi-name">Thiruverkadu Bus Terminus</span>
+                    <span class="poi-name">Porur Junction Metro Station (Phase 2)</span>
                 </div>
-                <div class="poi-time-wrap">
-                    <span class="poi-dist">4.0km</span>
-                    <span class="poi-time">(9 mins)</span>
-                </div>
+                <span class="poi-dist" style="color: #0D9488;">5.6km</span>
             </div>
         </li>
         
@@ -1138,12 +1044,9 @@
             <div class="poi-header">
                 <div class="poi-title-wrap">
                     <span class="poi-idx">05.</span>
-                    <span class="poi-name">Poonamallee Bus Terminus</span>
+                    <span class="poi-name">Porur Toll Plaza (Chennai Bypass)</span>
                 </div>
-                <div class="poi-time-wrap">
-                    <span class="poi-dist">4.8km</span>
-                    <span class="poi-time">(9 mins)</span>
-                </div>
+                <span class="poi-dist" style="color: #0D9488;">6.8km</span>
             </div>
         </li>
         
@@ -1151,12 +1054,9 @@
             <div class="poi-header">
                 <div class="poi-title-wrap">
                     <span class="poi-idx">06.</span>
-                    <span class="poi-name">Porur Junction Metro Station (Phase 2)</span>
+                    <span class="poi-name">Pallavaram Railway Station (Suburban)</span>
                 </div>
-                <div class="poi-time-wrap">
-                    <span class="poi-dist">5.5km</span>
-                    <span class="poi-time">(17 mins)</span>
-                </div>
+                <span class="poi-dist" style="color: #0D9488;">10.6km</span>
             </div>
         </li>
         
@@ -1164,64 +1064,9 @@
             <div class="poi-header">
                 <div class="poi-title-wrap">
                     <span class="poi-idx">07.</span>
-                    <span class="poi-name">Vanagaram Toll Plaza / Chennai Bypass (NH-32)</span>
-                </div>
-                <div class="poi-time-wrap">
-                    <span class="poi-dist">5.9km</span>
-                    <span class="poi-time">(16 mins)</span>
-                </div>
-            </div>
-        </li>
-        
-        <li class="poi-item " id="transit-li-7" onclick="showDetail('transit', 7)">
-            <div class="poi-header">
-                <div class="poi-title-wrap">
-                    <span class="poi-idx">08.</span>
-                    <span class="poi-name">Chennai - Maduravoyal Bypass (W)</span>
-                </div>
-                <div class="poi-time-wrap">
-                    <span class="poi-dist">6.3km</span>
-                    <span class="poi-time">(16 mins)</span>
-                </div>
-            </div>
-        </li>
-        
-        <li class="poi-item " id="transit-li-8" onclick="showDetail('transit', 8)">
-            <div class="poi-header">
-                <div class="poi-title-wrap">
-                    <span class="poi-idx">09.</span>
-                    <span class="poi-name">Avadi Railway Station (Suburban Rail)</span>
-                </div>
-                <div class="poi-time-wrap">
-                    <span class="poi-dist">9.7km</span>
-                    <span class="poi-time">(22 mins)</span>
-                </div>
-            </div>
-        </li>
-        
-        <li class="poi-item " id="transit-li-9" onclick="showDetail('transit', 9)">
-            <div class="poi-header">
-                <div class="poi-title-wrap">
-                    <span class="poi-idx">10.</span>
-                    <span class="poi-name">Koyambedu Metro & CMBT Bus Terminus</span>
-                </div>
-                <div class="poi-time-wrap">
-                    <span class="poi-dist">11.4km</span>
-                    <span class="poi-time">(31 mins)</span>
-                </div>
-            </div>
-        </li>
-        
-        <li class="poi-item " id="transit-li-10" onclick="showDetail('transit', 10)">
-            <div class="poi-header">
-                <div class="poi-title-wrap">
-                    <span class="poi-idx">11.</span>
                     <span class="poi-name">Chennai International Airport (MAA)</span>
                 </div>
-                <div class="poi-time-wrap">
-                    <span class="poi-dist">16.6km</span>
-                    <span class="poi-time">(39 mins)</span>
-                </div>
+                <span class="poi-dist" style="color: #0D9488;">11.6km</span>
             </div>
         </li>
         
@@ -1234,33 +1079,33 @@
                     
                     <!-- Landmark Image Banner -->
                     <div class="photo-banner-wrap">
-                        <img id="transit-img" class="photo-banner" src="https://images.unsplash.com/photo-1570125909232-eb263c188f7e?auto=format&fit=crop&w=1000&q=80" alt="Velappanchavadi Bus Stop (Poonamallee High Rd)">
+                        <img id="transit-img" class="photo-banner" src="https://images.unsplash.com/photo-1570125909232-eb263c188f7e?auto=format&fit=crop&w=1000&q=80" alt="Pattur Bus Stop">
                         <div class="photo-overlay">
-                            <span class="distance-pill" id="transit-dist-badge">650m (walk) / 2.9km (bike) • 6 mins from Site</span>
+                            <span class="distance-pill" id="transit-dist-badge">500m from Site</span>
                         </div>
                     </div>
 
                     <!-- Landmark Name & Category -->
                     <div class="detail-header-block">
                         <div class="detail-cat-tag" style="color: #0D9488;">CONNECTIVITY & TRANSIT HUBS</div>
-                        <h3 class="detail-landmark-title" id="transit-title">Velappanchavadi Bus Stop (Poonamallee High Rd)</h3>
+                        <h3 class="detail-landmark-title" id="transit-title">Pattur Bus Stop</h3>
                     </div>
 
                     <!-- Strategic Importance Section -->
                     <div class="importance-highlight-box">
                         <div class="ih-label">Real Estate Importance & Strategic Advantage</div>
-                        <p class="ih-text" id="transit-desc">Immediate walkable bus stop (650m pedestrian access / 2.9km road) connecting MTC buses directly along Poonamallee High Road.</p>
+                        <p class="ih-text" id="transit-desc">Immediate 5-minute walk along Kundrathur Main Road; provides frequent MTC bus connections for daily commuters and domestic staff.</p>
                     </div>
 
                     <!-- 2-Column Metrics / Target Market Breakdown -->
                     <div class="metrics-grid">
                         <div class="metric-sub-card">
                             <div class="m-label">Target Buyer Demographics</div>
-                            <div class="m-val" id="transit-demographic">Daily Commuters, Students & Domestic Staff</div>
+                            <div class="m-val" id="transit-demographic">Daily Commuters, Students & Household Staff</div>
                         </div>
                         <div class="metric-sub-card">
                             <div class="m-label">Investment / Yield Driver</div>
-                            <div class="m-val" id="transit-catalyst">Walkable Arterial Transit on NH-48</div>
+                            <div class="m-val" id="transit-catalyst">Walkable Public Transit Essential for Gated Communities</div>
                         </div>
                     </div>
 
@@ -1274,15 +1119,15 @@
 
         <!-- Slide Footer Bar -->
         <div class="slide-footer">
-            <span>Confidential Internal Evaluation Slide • Verified Landmark Proximities & Drive Times</span>
-            <span class="status-badge">Noombal Site Appraisal</span>
+            <span>Confidential Internal Evaluation Slide • Verified Landmark Proximities & Investment Significance</span>
+            <span class="status-badge">Executive Slide Mode</span>
         </div>
 
     </div>
 
     <!-- Pure Vanilla JS for Instant Tab Switching and Item Selection -->
     <script>
-        const appData = [{"id": "it", "name": "IT Parks & Business Hubs", "count": 7, "color": "#2563EB", "sub": "Dual-corridor employment access to Porur tech spine and Ambattur industrial/IT zone", "items": [{"name": "Commerzone Porur", "distance": "6.9km", "time": "18 mins", "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=80", "importance": "Grade-A IT park campus hosting multinational software & BPO giants. Direct arterial connection via Chennai Bypass drives immediate rental demand for residential units.", "demographic": "IT Consultants, Tech Leads & Software Engineers", "catalyst": "High-Density White-Collar Rental Tenant Inflow"}, {"name": "RMZ One Paramount (Porur)", "distance": "6.8km", "time": "18 mins", "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1000&q=80", "importance": "2.4M sq.ft. LEED Platinum campus hosting Amazon, Caterpillar & Hitachi. Anchors executive and managerial tenant demand within an 18-minute drive.", "demographic": "Global MNC Executives & Corporate Managers", "catalyst": "Premium Rental Yields & High Tenancy Stability"}, {"name": "L&T Infotech / SEZ Campus", "distance": "8.5km", "time": "22 mins", "image": "https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1000&q=80", "importance": "Over 30,000 corporate engineering professionals seeking tranquil family housing outside congested city zones, ensuring zero vacancy risk.", "demographic": "Engineering Leads & Enterprise Developers", "catalyst": "Long-term Corporate Lease Renewals"}, {"name": "D.L.F Cyber City (DLF IT Park)", "distance": "9.0km", "time": "24 mins", "image": "https://images.unsplash.com/photo-1554469384-e58fac16e23a?auto=format&fit=crop&w=1000&q=80", "importance": "Chennai's benchmark IT destination with 70,000+ employees; the primary engine of high rental yields (4.5%\u20135.2%) in the greater southwest corridor.", "demographic": "Massive Corporate IT Workforce with High Spending Power", "catalyst": "Benchmark Real Estate Rental Engine"}, {"name": "Kosmo One IT Park - Ambattur", "distance": "9.7km", "time": "22 mins", "image": "https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=1000&q=80", "importance": "North-West Chennai's premier 10-acre Grade-A IT park housing global financial services, healthcare tech, and IT operations.", "demographic": "Fintech, Back-Office Leadership & IT Architects", "catalyst": "Unlocks Ambattur IT Corridor Rental Catchment"}, {"name": "Ambit IT Park (Ambattur Industrial Estate)", "distance": "9.9km", "time": "23 mins", "image": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1000&q=80", "importance": "Key modern tech park within the Ambattur Industrial corridor, easily accessible via Chennai Bypass avoiding inner-city traffic bottlenecks.", "demographic": "Industrial Tech Executives & Operations Managers", "catalyst": "Seamless Bypass Access to Ambattur Industrial Corridor"}, {"name": "Olympia Technology Park (Guindy)", "distance": "12.3km", "time": "30 mins", "image": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1000&q=80", "importance": "Flagship CBD-periphery tech hub connected directly via arterial roads, bridging central city corporate hubs to the western suburbs.", "demographic": "Senior Corporate Management & CXO Leadership", "catalyst": "Direct Arterial Link to Established City Center"}]}, {"id": "schools", "name": "Schools & Colleges", "count": 8, "color": "#D97706", "sub": "Cluster of premier medical colleges, deemed universities, and international schools", "items": [{"name": "ACS Medical College & Hospital", "distance": "1.7km", "time": "3 mins", "image": "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1000&q=80", "importance": "Prominent medical college and teaching hospital campus situated right along Poonamallee High Road, generating continuous faculty and student rental demand.", "demographic": "Medical Professors, Lecturers & Resident Students", "catalyst": "Steady Year-round Institutional Rental Demand"}, {"name": "Sindhi College (Thiruverkadu)", "distance": "2.0km", "time": "3 mins", "image": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1000&q=80", "importance": "Established arts, science, and management college in Thiruverkadu anchoring the youth academic demographic in the immediate vicinity.", "demographic": "College Staff, Faculty & Students", "catalyst": "Localized Educational Anchor for Suburban Catchment"}, {"name": "The Pupil Saveetha Eco School", "distance": "3.8km", "time": "8 mins", "image": "https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=1000&q=80", "importance": "Prestigious eco-friendly CBSE school with world-class sprawling campus and sports infrastructure, serving as a decisive magnet for young families.", "demographic": "Young Nuclear Families & Progressive Parents", "catalyst": "High-Value School Proximity Driving Home Conversions"}, {"name": "Sri Ramachandra Institute of Higher Education (SRMC)", "distance": "3.8km", "time": "12 mins", "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1000&q=80", "importance": "Nationally ranked Deemed Medical University with thousands of postgraduate resident doctors, researchers, and faculty ensuring zero rental vacancy.", "demographic": "Resident Doctors, Healthcare Researchers & Professors", "catalyst": "Perpetual, High-Yield Healthcare Rental Market"}, {"name": "Saveetha Dental College & Hospitals", "distance": "4.3km", "time": "9 mins", "image": "https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=1000&q=80", "importance": "Global top-ranked dental education institution generating steady demand for premium apartments from international and domestic postgraduates.", "demographic": "Dental Scholars, Clinicians & Academic Staff", "catalyst": "International & Domestic Student Housing Demand"}, {"name": "The Schram Academy (Maduravoyal)", "distance": "6.0km", "time": "17 mins", "image": "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1000&q=80", "importance": "Leading international CBSE/Cambridge day school with excellent academic track record, popular with upwardly mobile corporate parents.", "demographic": "Mid-to-Senior Level Corporate Professionals", "catalyst": "Expands Premium Schooling Options within Reach"}, {"name": "Velammal Vidyalaya (Ayanambakkam / Vanagaram)", "distance": "6.7km", "time": "18 mins", "image": "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=1000&q=80", "importance": "Highly sought-after academic institution known for competitive exam preparation and academic rigour; commands high residential loyalty.", "demographic": "Education-Conscious Suburban Families", "catalyst": "Proven Brand Value Driving Long-Term Family Living"}, {"name": "Dr. M.G.R. Educational and Research Institute", "distance": "7.7km", "time": "22 mins", "image": "https://images.unsplash.com/photo-1525921429624-479b6a26d84d?auto=format&fit=crop&w=1000&q=80", "importance": "Major Deemed University offering multidisciplinary engineering, dental, and medical programs anchoring thousands of staff and students.", "demographic": "University Staff, Professors & Students", "catalyst": "Substantial Higher Education Workforce Presence"}]}, {"id": "hospitals", "name": "Hospitals & Healthcare", "count": 6, "color": "#DC2626", "sub": "Immediate healthcare corridor along Poonamallee High Road backed by quaternary hospitals", "items": [{"name": "Aravind Eye Hospital (Poonamallee High Rd)", "distance": "1.3km", "time": "2 mins", "image": "https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=1000&q=80", "importance": "State-of-the-art super-specialty eye care hospital providing world-class ophthalmology services just 2 minutes away.", "demographic": "Neighborhood Residents & Senior Citizens", "catalyst": "Super-Specialty Eye Care at the Project's Doorstep"}, {"name": "ACS Medical College Hospital", "distance": "1.7km", "time": "3 mins", "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1000&q=80", "importance": "Large-scale teaching hospital providing 24/7 emergency trauma, outpatient, and multi-specialty inpatient healthcare within 3 minutes.", "demographic": "Families Seeking Instant Medical Emergency Access", "catalyst": "Round-the-Clock Emergency Medical Security"}, {"name": "Sri Ramachandra Medical Centre (SRMC, Porur)", "distance": "4.3km", "time": "14 mins", "image": "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1000&q=80", "importance": "1,800-bed world-renowned quaternary care hospital with international accreditations, 24/7 trauma, and organ transplant departments.", "demographic": "Demanding Homebuyers Seeking Premier Medical Safety", "catalyst": "Premier Healthcare Anchor within a 15-Minute Radius"}, {"name": "Saveetha Dental Hospital & Healthcare", "distance": "4.3km", "time": "9 mins", "image": "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1000&q=80", "importance": "Premier healthcare facility known for specialized maxillo-facial, oral health, and general healthcare operations.", "demographic": "Specialized Dental & Health Care Seekers", "catalyst": "Specialized Healthcare Institutional Support"}, {"name": "Apollo Speciality Hospital (Vanagaram)", "distance": "5.6km", "time": "14 mins", "image": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&w=1000&q=80", "importance": "Flagship Apollo tertiary hospital easily reached via Chennai Bypass, featuring advanced cardiology, oncology, and 24/7 critical emergency care.", "demographic": "High-Income Families Trusting Leading Private Healthcare", "catalyst": "Gold-Standard Super-Specialty Medical Reassurance"}, {"name": "MIOT International Hospital (Manapakkam)", "distance": "9.1km", "time": "24 mins", "image": "https://images.unsplash.com/photo-1538108149393-fbbd81895907?auto=format&fit=crop&w=1000&q=80", "importance": "World-class orthopedic and multi-organ transplant hospital attracting international patients, medical tourists, and senior healthcare staff.", "demographic": "Senior Doctors, Healthcare Executives & Expats", "catalyst": "High-Income Healthcare Workforce Seeking Quality Homes"}]}, {"id": "entertainment", "name": "Entertainment, Retail & Culture", "count": 6, "color": "#9333EA", "sub": "Sacred cultural pilgrimage landmarks, mega hypermarkets, and destination malls", "items": [{"name": "Arulmigu Devi Karumariamman Temple (Thiruverkadu)", "distance": "4.2km", "time": "11 mins", "image": "https://images.unsplash.com/photo-1609766857041-ed402ea8069a?auto=format&fit=crop&w=1000&q=80", "importance": "Famed state-wide pilgrimage shrine drawing millions annually; infuses the entire micro-market with rich cultural heritage, peace, and spiritual prestige.", "demographic": "Devout Homebuyers, Multi-Generational Families & Retirees", "catalyst": "Permanent Cultural & Spiritual Heritage Value Anchor"}, {"name": "Super Saravana Stores (Porur)", "distance": "6.3km", "time": "17 mins", "image": "https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?auto=format&fit=crop&w=1000&q=80", "importance": "Massive multi-storey hypermarket fulfilling all gold, apparel, grocery, and home goods shopping under one roof.", "demographic": "Families Seeking Comprehensive Household Shopping", "catalyst": "Unmatched Daily & Festival Retail Convenience"}, {"name": "Rohini Silver Screens (Koyambedu)", "distance": "9.6km", "time": "29 mins", "image": "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1000&q=80", "importance": "Iconic cinema entertainment complex with state-of-the-art Dolby Atmos projection, popular for weekend family movie outings.", "demographic": "Youth, Young Couples & Moviegoers", "catalyst": "Celebrated Weekend Entertainment Destination"}, {"name": "EVP Cinemas / EVP World", "distance": "10.1km", "time": "15 mins", "image": "https://images.unsplash.com/photo-1517649763962-0c623266ddc0?auto=format&fit=crop&w=1000&q=80", "importance": "Large leisure, cinema, and entertainment complex situated along the western Bangalore highway corridor.", "demographic": "Families, Film Enthusiasts & Weekend Travelers", "catalyst": "Western Highway Leisure & Recreation Destination"}, {"name": "VR Chennai (Anna Nagar / Koyambedu)", "distance": "10.5km", "time": "32 mins", "image": "https://images.unsplash.com/photo-1567449303078-57ad995bd301?auto=format&fit=crop&w=1000&q=80", "importance": "Award-winning flagship lifestyle shopping mall featuring luxury international brands, PVR P[XL] multiplex, and gourmet dining.", "demographic": "Cosmopolitan Luxury Shoppers & High-Income Buyers", "catalyst": "Direct Link to Chennai's Premier Lifestyle Destination"}, {"name": "Nexus Vijaya Mall (Vadapalani)", "distance": "12.6km", "time": "36 mins", "image": "https://images.unsplash.com/photo-1519567241046-7f570eee3ce6?auto=format&fit=crop&w=1000&q=80", "importance": "Flagship central shopping mall featuring international fashion retail, IMAX screens, and extensive food courts.", "demographic": "Discerning Urban Shoppers & Cinephiles", "catalyst": "Complete Metropolitan Shopping & Entertainment Access"}]}, {"id": "transit", "name": "Connectivity & Transit Hubs", "count": 11, "color": "#0D9488", "sub": "Strategic junction connecting Poonamallee High Road, Chennai Bypass, and Metro Phase 2", "items": [{"name": "Velappanchavadi Bus Stop (Poonamallee High Rd)", "distance": "650m (walk) / 2.9km (bike)", "time": "6 mins", "image": "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?auto=format&fit=crop&w=1000&q=80", "importance": "Immediate walkable bus stop (650m pedestrian access / 2.9km road) connecting MTC buses directly along Poonamallee High Road.", "demographic": "Daily Commuters, Students & Domestic Staff", "catalyst": "Walkable Arterial Transit on NH-48"}, {"name": "Maduravoyal Metro Station (Phase 2)", "distance": "1.6km", "time": "5 mins", "image": "https://images.unsplash.com/photo-1517649763962-0c623266ddc0?auto=format&fit=crop&w=1000&q=80", "importance": "Nearest upcoming Chennai Metro Phase 2 station on Corridor 4. Slashes travel time to Central Chennai down to 20 minutes.", "demographic": "IT Professionals & Daily Central City Commuters", "catalyst": "Prime Metro Catalyst: 35%\u201345% Capital Value Appreciation"}, {"name": "Kumananchavadi Metro Station (Phase 2)", "distance": "2.6km", "time": "5 mins", "image": "https://images.unsplash.com/photo-1474487548417-781cb71495f3?auto=format&fit=crop&w=1000&q=80", "importance": "Key upcoming Phase 2 Metro station facilitating seamless westbound and eastbound connectivity along Corridor 4.", "demographic": "Corporate Commuters towards Poonamallee & Vadapalani", "catalyst": "Dual-Station Metro Advantage Driving Fast Pre-sales"}, {"name": "Thiruverkadu Bus Terminus", "distance": "4.0km", "time": "9 mins", "image": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1000&q=80", "importance": "Major local bus depot providing direct bus routes across Chennai to Broadway, Tambaram, Central, and Guindy.", "demographic": "Public Transit Commuters & Local Residents", "catalyst": "Comprehensive Suburban Bus Network"}, {"name": "Poonamallee Bus Terminus", "distance": "4.8km", "time": "9 mins", "image": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1000&q=80", "importance": "Massive western multimodal transport hub connecting intra-city buses and mofussil services towards Bangalore highway.", "demographic": "Intercity Travelers & Regional Commuters", "catalyst": "Western Regional Transit Hub Anchor"}, {"name": "Porur Junction Metro Station (Phase 2)", "distance": "5.5km", "time": "17 mins", "image": "https://images.unsplash.com/photo-1517649763962-0c623266ddc0?auto=format&fit=crop&w=1000&q=80", "importance": "Crucial strategic double-corridor interchange connecting Corridor 4 and Corridor 5 (Madhavaram to Sholinganallur).", "demographic": "Techies Commuting across Porur, Guindy & OMR", "catalyst": "Interchange Station: Highest Property Value Appreciation"}, {"name": "Vanagaram Toll Plaza / Chennai Bypass (NH-32)", "distance": "5.9km", "time": "16 mins", "image": "https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=1000&q=80", "importance": "Direct high-speed expressway access linking NH-32 and NH-48 towards Sriperumbudur, Ambattur, and GST Road.", "demographic": "Industrial & Manufacturing Corporate Leaders", "catalyst": "Seamless Bypass Mobility Avoiding City Bottlenecks"}, {"name": "Chennai - Maduravoyal Bypass (W)", "distance": "6.3km", "time": "16 mins", "image": "https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=1000&q=80", "importance": "Vital western bypass corridor connecting the upcoming double-decker elevated port expressway to Chennai Port and NH-48.", "demographic": "Commercial Investors & Freight Logistics Leaders", "catalyst": "Port Expressway Infrastructure Appreciation Multiplier"}, {"name": "Avadi Railway Station (Suburban Rail)", "distance": "9.7km", "time": "22 mins", "image": "https://images.unsplash.com/photo-1474487548417-781cb71495f3?auto=format&fit=crop&w=1000&q=80", "importance": "Major suburban rail junction connecting directly to Chennai Central, Arakkonam, and Thiruvallur along the western line.", "demographic": "Heavy Suburban Rail Commuters", "catalyst": "Multimodal Rail Backup Complementing Metro Network"}, {"name": "Koyambedu Metro & CMBT Bus Terminus", "distance": "11.4km", "time": "31 mins", "image": "https://images.unsplash.com/photo-1517649763962-0c623266ddc0?auto=format&fit=crop&w=1000&q=80", "importance": "Chennai's primary operational metro interchange (Green & Blue line links) and regional bus transport headquarters.", "demographic": "All Metropolitan Commuters & Regional Travelers", "catalyst": "Direct Access to Chennai's Core Transit Interchange"}, {"name": "Chennai International Airport (MAA)", "distance": "16.6km", "time": "39 mins", "image": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1000&q=80", "importance": "Reachable via Chennai Bypass / Pallavaram road in ~39 minutes, providing seamless connectivity for corporate frequent flyers and NRIs.", "demographic": "NRIs, Corporate Executives & Frequent Business Flyers", "catalyst": "Air Transit Accessibility: Critical Selling Hook for Gated Enclaves"}]}];
+        const appData = [{"id": "it", "name": "IT Parks & Business Hubs", "count": 7, "color": "#2563EB", "sub": "Major white-collar employment engines driving immediate rental absorption", "items": [{"name": "Commerzone Porur (Mindspace / K Raheja)", "distance": "7.1km", "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=80", "importance": "High-density Grade-A tech ecosystem hosting top IT/BPO conglomerates. Generates steady residential demand for 2 & 3 BHK apartments within a 15-minute commute.", "demographic": "Senior IT Consultants, Product Leads & Software Architects", "catalyst": "Massive Corporate Rental Pool (15k+ workforce)"}, {"name": "RMZ One Paramount", "distance": "7.5km", "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1000&q=80", "importance": "2.4 million sq.ft. LEED Platinum campus hosting premier multinational tenants like Amazon and Caterpillar, ensuring top-tier corporate tenant quality and stability.", "demographic": "Global MNC Executives & Tech Management", "catalyst": "Premium Lease Rates & Long-term Corporate Tenancy"}, {"name": "L&T Infotech / SEZ Campus", "distance": "8.6km", "image": "https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1000&q=80", "importance": "Over 30,000 corporate engineering professionals seeking tranquil family living outside congested core city pockets with high lease renewal rates.", "demographic": "Engineering Leads & Enterprise Developers", "catalyst": "Zero Vacancy Risk via Continuous Workforce Inflow"}, {"name": "Jayanth Tech Park", "distance": "9.1km", "image": "https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=1000&q=80", "importance": "Key Mount-Poonamallee tech corridor anchor contributing directly to western Chennai's employment density and housing demand.", "demographic": "Fintech, Analytics & Cloud Services Professionals", "catalyst": "Direct Arterial Link via Kundrathur Main Road"}, {"name": "DLF Cybercity (DLF IT Park)", "distance": "9.1km", "image": "https://images.unsplash.com/photo-1554469384-e58fac16e23a?auto=format&fit=crop&w=1000&q=80", "importance": "Chennai's benchmark IT destination with 70,000+ employees; the single greatest driver of rental demand and yields (4.5%\u20135.2%) across southwest Chennai.", "demographic": "Massive Tech Catchment with High Purchasing Power", "catalyst": "Benchmark Real Estate Rental Engine of South-West Chennai"}, {"name": "Olympia Technology Park (Guindy)", "distance": "11.7km", "image": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1000&q=80", "importance": "Flagship CBD-periphery business park located at the Guindy commercial junction, connected directly via arterial roads.", "demographic": "Senior Corporate Management & CXO Leadership", "catalyst": "Seamless Bridge between Core City & Suburban Living"}, {"name": "ASV Suntech Park", "distance": "23.8km", "image": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1000&q=80", "importance": "Major regional tech park facility expanding the outer employment catchment across Chennai's broader southern tech landscape.", "demographic": "Broad IT Sector Workforce seeking Spacious Living", "catalyst": "Expanded Regional Buyer & Investor Catchment"}]}, {"id": "schools", "name": "Schools & Colleges", "count": 8, "color": "#D97706", "sub": "Essential education infrastructure defining family end-user appeal & capital appreciation", "items": [{"name": "Velammal Vidyalaya (Mangadu)", "distance": "300m", "image": "https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=1000&q=80", "importance": "Practically next door (2-minute walk). Top-ranked CBSE school; eliminating school bus commutes is the #1 decision maker and purchase hook for families with young children.", "demographic": "Young Nuclear Families with School-Going Children", "catalyst": "Walk-to-School Luxury: Instant Deal-Closer for End-Users"}, {"name": "Rishs International School", "distance": "1.9 km", "image": "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1000&q=80", "importance": "Modern CBSE curriculum day school with world-class sports facilities and international learning standards within a 5-minute drive.", "demographic": "Affluent Families seeking Holistic Modern Education", "catalyst": "Elevates the Neighborhood's Educational Prestige"}, {"name": "Sri Muthukumaran Institute of Technology", "distance": "2.1km", "image": "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1000&q=80", "importance": "Premier engineering & technology institute with expansive campus facilities generating steady student, faculty, and staff housing demand.", "demographic": "Professors, Teaching Faculty & College Staff", "catalyst": "Predictable Year-round Institutional Rental Demand"}, {"name": "Sri Krish International School (Kundrathur)", "distance": "2.9km", "image": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1000&q=80", "importance": "Highly regarded school offering comprehensive academic excellence and seamless school transport across the Kundrathur-Mangadu belt.", "demographic": "Mid-to-Senior Management Families", "catalyst": "Abundant Schooling Choices within a 3km Radius"}, {"name": "Maharishi Vidya Mandir (Mangadu)", "distance": "3.2km", "image": "https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=1000&q=80", "importance": "A legendary name in Chennai school education with enormous brand prestige and value-based schooling driving strong residential loyalty.", "demographic": "Traditional Families Valuing Academic Rigour", "catalyst": "Premium Brand Recall Driving Long-Term Retention"}, {"name": "PSBB Millennium School (Gerugambakkam)", "distance": "3.9km", "image": "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=1000&q=80", "importance": "Elite Tier-1 institution. Homebuyers in Chennai routinely pay a premium just to live within its primary admission catchment radius.", "demographic": "High-Net-Worth Professionals & Ambitious Parents", "catalyst": "Significant Price Premium & Fast Capital Appreciation"}, {"name": "Sri Ramachandra Institute of Higher Education (SRMC)", "distance": "4.8km", "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1000&q=80", "importance": "Deemed Medical University with thousands of postgraduate resident doctors, researchers, and senior medical faculty creating continuous rental occupancy.", "demographic": "Resident Doctors, Scholars & Medical Faculty", "catalyst": "Perpetual, High-Yield Rental Market"}, {"name": "Madha Engineering & Medical College", "distance": "5.9km", "image": "https://images.unsplash.com/photo-1525921429624-479b6a26d84d?auto=format&fit=crop&w=1000&q=80", "importance": "Dual professional campus delivering healthcare and technical graduates, anchoring the Kundrathur-Mangadu educational demographic.", "demographic": "Academic Staff, Healthcare Educators & Students", "catalyst": "Strong Suburban Higher Education Anchor"}]}, {"id": "hospitals", "name": "Hospitals & Healthcare", "count": 7, "color": "#DC2626", "sub": "Comprehensive healthcare safety net from immediate clinics to tertiary hospitals", "items": [{"name": "Taj Hospital (Pattur)", "distance": "300m", "image": "https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=1000&q=80", "importance": "Immediate neighborhood medical facility at 300m walking distance. Provides 24/7 outpatient care, emergency first response, and pharmacy services.", "demographic": "Senior Citizens, Retirees & Families with Toddlers", "catalyst": "Doorstep Emergency Healthcare Security"}, {"name": "Mangadu Government PHC Hospital", "distance": "1km", "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1000&q=80", "importance": "Crucial public healthcare facility offering rapid primary medical care and municipal community health infrastructure.", "demographic": "Immediate Local Community & Resident Support", "catalyst": "Established Civic Municipal Healthcare Support"}, {"name": "Annai Grace Hospital", "distance": "3.4km", "image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=1000&q=80", "importance": "Well-regarded multi-specialty community hospital specializing in general medicine, pediatrics, and maternity care within 6 minutes.", "demographic": "Local Residents Seeking Fast Family Healthcare", "catalyst": "Trusted Secondary Multi-Specialty Support"}, {"name": "Sri Ramachandra Medical Centre (Sri Ramachandra Hospital)", "distance": "5.3km", "image": "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1000&q=80", "importance": "Nationally renowned 1,800-bed super-specialty quaternary medical institution with round-the-clock trauma care, organ transplants, and top medical specialists.", "demographic": "Homebuyers Seeking World-Class Medical Safety", "catalyst": "Premier Healthcare Anchor within a 10-Minute Drive"}, {"name": "Kedar Hospital (Mugalivakkam)", "distance": "6.3km", "image": "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1000&q=80", "importance": "Prominent multi-specialty center offering specialized laparoscopic surgery, maternity care, and advanced diagnostic imaging.", "demographic": "Maternity & Specialized Healthcare Seekers", "catalyst": "High-Quality Secondary Surgical Care"}, {"name": "Apollo Speciality Hospital (Vanagaram)", "distance": "8.9km", "image": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&w=1000&q=80", "importance": "Flagship Apollo tertiary care hospital easily accessible via Chennai Bypass, featuring advanced oncology, cardiology, and 24/7 emergency response.", "demographic": "High-Income Families Trusting Top Private Healthcare", "catalyst": "Gold-Standard Super-Specialty Medical Reassurance"}, {"name": "MIOT International Hospital (Manapakkam)", "distance": "9.3km", "image": "https://images.unsplash.com/photo-1538108149393-fbbd81895907?auto=format&fit=crop&w=1000&q=80", "importance": "World-class orthopedic and multi-organ transplant hospital attracting international patients, expats, and renowned physicians.", "demographic": "Senior Doctors, Healthcare Executives & Expats", "catalyst": "High-Income Healthcare Workforce Seeking Quality Homes"}]}, {"id": "entertainment", "name": "Entertainment, Retail & Culture", "count": 6, "color": "#9333EA", "sub": "Lifestyle, retail hypermarkets, and cultural heritage anchors", "items": [{"name": "Arulmigu Mangadu Kamakshi Amman Temple", "distance": "1.2km", "image": "https://images.unsplash.com/photo-1609766857041-ed402ea8069a?auto=format&fit=crop&w=1000&q=80", "importance": "Historic sacred heritage epicenter of regional and national renown. Infuses the entire locality with spiritual grace, peace, and permanent cultural prestige.", "demographic": "Devout Homebuyers, Retirees & Multi-Generational Families", "catalyst": "Permanent Cultural Aura Ensuring Evergreen Buyer Sentiment"}, {"name": "GK Cinemas (Porur)", "distance": "6.1km", "image": "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1000&q=80", "importance": "Equipped with 4K RGB Laser projection and Dolby Atmos sound; popular entertainment hub for weekend moviegoers and families.", "demographic": "Young Couples, Tech Professionals & Cinephiles", "catalyst": "Weekend Cinema Leisure within a 10-Minute Drive"}, {"name": "Super Saravana Stores (Porur)", "distance": "6.4km", "image": "https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?auto=format&fit=crop&w=1000&q=80", "importance": "Mega-scale multi-floor shopping destination for textiles, gold jewelry, groceries, home appliances, and lifestyle goods.", "demographic": "Families Seeking Comprehensive Festival Shopping", "catalyst": "All-in-One Retail Convenience Making Living Effortless"}, {"name": "Chandra Metro Mall & INOX (Virugambakkam)", "distance": "9.8km", "image": "https://images.unsplash.com/photo-1567449303078-57ad995bd301?auto=format&fit=crop&w=1000&q=80", "importance": "Established high-street retail mall with INOX multiplex, food courts, and branded fashion retail chains.", "demographic": "Urban Shoppers & Leisure Seekers", "catalyst": "Connects Residents to Core City Retail Avenues"}, {"name": "Nexus Vijaya Mall (Vadapalani)", "distance": "11.6km", "image": "https://images.unsplash.com/photo-1519567241046-7f570eee3ce6?auto=format&fit=crop&w=1000&q=80", "importance": "One of Chennai's premier destination shopping malls with international lifestyle brands, IMAX, and gourmet dining.", "demographic": "Discerning Luxury Shoppers & Youth Demographic", "catalyst": "Premier Metropolitan Entertainment & Shopping Hub"}, {"name": "Aerohub Mall & PVR (Airport)", "distance": "11.6km", "image": "https://images.unsplash.com/photo-1514565131-fce0801e5785?auto=format&fit=crop&w=1000&q=80", "importance": "State-of-the-art modern lifestyle mall next to Chennai Airport featuring PVR Luxe screens, premium dining, and branded retail.", "demographic": "Frequent Flyers, Corporate Executives & Cosmopolitan Families", "catalyst": "Bridges Luxury Retail with Airport Transit Corridors"}]}, {"id": "transit", "name": "Connectivity & Transit Hubs", "count": 7, "color": "#0D9488", "sub": "Multimodal transit network linking buses, metro rail, expressways, and airport", "items": [{"name": "Pattur Bus Stop", "distance": "500m", "image": "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?auto=format&fit=crop&w=1000&q=80", "importance": "Immediate 5-minute walk along Kundrathur Main Road; provides frequent MTC bus connections for daily commuters and domestic staff.", "demographic": "Daily Commuters, Students & Household Staff", "catalyst": "Walkable Public Transit Essential for Gated Communities"}, {"name": "Mangadu Bus Terminus", "distance": "1.2km", "image": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1000&q=80", "importance": "Major suburban bus terminus operating direct routes across Chennai to Broadway, Guindy, Central, Tambaram, and Koyambedu.", "demographic": "Public Transit Users Seeking Direct City-wide Access", "catalyst": "Comprehensive Bus Network Ensuring Zero Transit Isolation"}, {"name": "Iyyappanthangal Bus Depot & Metro Station (Phase 2)", "distance": "4.2km", "image": "https://images.unsplash.com/photo-1517649763962-0c623266ddc0?auto=format&fit=crop&w=1000&q=80", "importance": "Upcoming Chennai Metro Phase 2 station on Corridor 4 (Poonamallee to Light House). Slashes commute times to the city center down to ~25 minutes.", "demographic": "IT Professionals & Central Chennai Commuters", "catalyst": "Major Metro Catalyst: Projected 35%\u201345% Capital Appreciation"}, {"name": "Porur Junction Metro Station (Phase 2)", "distance": "5.6km", "image": "https://images.unsplash.com/photo-1474487548417-781cb71495f3?auto=format&fit=crop&w=1000&q=80", "importance": "Crucial strategic interchange station connecting Corridor 4 and Corridor 5 (Madhavaram to Sholinganallur). Unlocks direct rapid transit to OMR.", "demographic": "Techies Working Across Both Porur & OMR Corridors", "catalyst": "Interchange Station: Highest Property Value Escalation"}, {"name": "Porur Toll Plaza (Chennai Bypass)", "distance": "6.8km", "image": "https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=1000&q=80", "importance": "Direct elevated expressway access linking NH-32 and NH-48. Facilitates rapid drives towards Sriperumbudur, Oragadam, Tambaram, and Bangalore highway.", "demographic": "Automotive & Industrial Corporate Leaders", "catalyst": "Seamless Highway Mobility Bypassing City Congestion"}, {"name": "Pallavaram Railway Station (Suburban)", "distance": "10.6km", "image": "https://images.unsplash.com/photo-1474487548417-781cb71495f3?auto=format&fit=crop&w=1000&q=80", "importance": "Established suburban railway stop connecting directly to Chennai Beach, Tambaram, and Chengalpattu along the GST rail corridor.", "demographic": "Suburban Rail Commuters & Rail Travelers", "catalyst": "Dual Multimodal Advantage (Suburban Rail + Metro)"}, {"name": "Chennai International Airport (MAA)", "distance": "11.6km", "image": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1000&q=80", "importance": "Fast ~20-25 minute drive to domestic and international terminals via Pallavaram-Kundrathur connector roads.", "demographic": "NRIs, Frequent Corporate Flyers & Senior Leadership", "catalyst": "Air Transit Proximity: Key USP for High-End Residential Plots"}]}];
 
         function selectCategory(catId, btnEl) {
             // Hide all panels
@@ -1320,7 +1165,7 @@
             const catEl = document.getElementById(catId + '-catalyst');
 
             if (imgEl) imgEl.src = item.image;
-            if (distBadge) distBadge.innerText = item.distance + ' • ' + item.time + ' from Site';
+            if (distBadge) distBadge.innerText = item.distance + ' from Site';
             if (titleEl) titleEl.innerText = item.name;
             if (descEl) descEl.innerText = item.importance;
             if (demoEl) demoEl.innerText = item.demographic;
